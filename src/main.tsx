@@ -1,8 +1,13 @@
-import React from "react";
-import ReactDOM from "react-dom/client";
-import { App } from "./App";
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+import TimeAgo from 'javascript-time-ago';
+import en from 'javascript-time-ago/locale/en';
 
-ReactDOM.createRoot(document.querySelector("#root") as HTMLElement).render(
+import { App } from './App';
+
+TimeAgo.addDefaultLocale(en);
+
+ReactDOM.createRoot(document.querySelector('#root') as HTMLElement).render(
   <React.StrictMode>
     <App />
   </React.StrictMode>
