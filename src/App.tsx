@@ -25,6 +25,7 @@ export const App = () => {
 
   const posts = [
     <Post
+      key={1}
       id={1}
       username="jmbcourt"
       createdAt={new Date()}
@@ -35,6 +36,7 @@ export const App = () => {
         voluptatem aut."
     />,
     <Post
+      key={2}
       id={2}
       username="santihoyos15"
       createdAt={new Date()}
@@ -46,6 +48,7 @@ export const App = () => {
         voluptatem aut."
     />,
     <Post
+      key={3}
       id={3}
       username="danielagonx"
       createdAt={new Date()}

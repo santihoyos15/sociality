@@ -13,6 +13,7 @@ export const Header = styled.div`
   display: flex;
   gap: 10px;
   align-items: center;
+  flex-wrap: wrap;
 `;
 
 export const ProfilePic = styled.img`
@@ -25,6 +26,16 @@ export const ProfilePic = styled.img`
 `;
 
 export const Username = styled.p``;
+
+export const OwnBadge = styled.div`
+  background-color: var(--primary-color);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 20px;
+  width: 30px;
+`;
 
 export const CreatedAt = styled.p`
   color: #6f6e6e;
