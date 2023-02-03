@@ -2,6 +2,8 @@ import './App.css';
 import { Post } from './components/Post';
 import { Feed } from './components/Feed';
 import { Props } from './components/Post/types';
+import { DeleteModal } from './components/DeleteModal';
+import { useState } from 'react';
 
 export const App = () => {
   const replies = [
@@ -60,5 +62,15 @@ export const App = () => {
         voluptatem aut."
     />,
   ];
-  return <Feed>{posts}</Feed>;
+
+  // TODO Probably implement useContext to make modal actions available everywhere
+  // TODO Probably learn how to make animations
+  const [isDeleteModalOpen, setIsDeleteModalOpen] = useState(true);
+
+  return (
+    <>
+      <Feed>{posts}</Feed>
+      <DeleteModal open={isDeleteModalOpen} />
+    </>
+  );
 };

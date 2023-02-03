@@ -8,6 +8,7 @@ import {
   Content,
   Username,
   EditText,
+  OwnBadge,
   CreatedAt,
   ReplyText,
   DeleteText,
@@ -17,7 +18,6 @@ import {
   DeleteButton,
   ButtonContainer,
   RepliesContainer,
-  OwnBadge,
 } from './styles';
 
 import { Props } from './types';
@@ -37,7 +37,7 @@ export const Post: React.FC<Props> = ({
         <Header>
           <ProfilePic />
           <Username>{username}</Username>
-          <OwnBadge>YOU</OwnBadge>
+          {own && <OwnBadge>YOU</OwnBadge>}
           <CreatedAt>
             <ReactTimeAgo date={createdAt} />
           </CreatedAt>

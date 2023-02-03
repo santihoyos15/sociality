@@ -8,6 +8,8 @@
   --primary-color: #5d3891;
   --primary-light-color: #f4f3fc;
   --danger-color: #ff5252;
+  --regular-text-color: #6f6e6e;
+  --global-border-radius: 6px;
 }
 
 * {

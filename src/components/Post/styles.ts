@@ -42,7 +42,7 @@ export const CreatedAt = styled.p`
 `;
 
 export const Content = styled.p`
-  color: #6f6e6e;
+  color: var(--regular-text-color);
   padding: ${cardPadding};
 `;
 
